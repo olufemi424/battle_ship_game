@@ -1,0 +1,75 @@
+* {
+  padding: o;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+div#board {
+  position: relative;
+  width: 1024px;
+  height: 850px;
+  margin: auto;
+  background: url(img/board.jpg) no-repeat;
+  background-size: 100%;
+}
+
+div#messageArea {
+  position: absolute;
+  top: 0;
+  left: 213px;
+  color: rgb(83, 175, 19);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+table {
+  position: absolute;
+  left: 180px;
+  top: 105px;
+  border-spacing: 0;
+}
+
+td {
+  width: 94px;
+  height: 94px;
+}
+
+td:hover {
+  background-color: #fff;
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  color: rgb(83, 175, 19);
+  background-color: rgb(red, green, blue);
+}
+
+form input {
+  background-color: rgb(152, 207, 113);
+  border-color: rgb(83, 175, 19);
+  font-size: 1em;
+  width: 90px;
+  padding: 1em;
+  color: #fff;
+}
+
+#fireButton {
+  background-color: red;
+  color: #fff;
+  width: 60px;
+}
+
+.hit {
+  background: url(img/ship.png) no-repeat center center;
+}
+
+.miss {
+  background: url(img/miss.png) no-repeat center center;
+}
