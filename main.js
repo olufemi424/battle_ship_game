@@ -47,7 +47,12 @@ var model = {
       var index = ship.locations.indexOf(guess);
       // var locations = ship.locations;
       // var index = locations.indexOf(guess); //OR
-      if (index >= 0) {
+
+      //CHECK IF SHIP HAS BEEN HIT
+      if (ship.hits[index] === "hit") {
+        view.displayMessage("Oops, you already hit that location!");
+        return true;
+      } else if (index >= 0) {
         ship.hits[index] = "hit";
         view.displayHit(guess);
         view.displayMessage("hit!");
